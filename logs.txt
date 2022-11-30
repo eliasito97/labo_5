@@ -1,0 +1,198 @@
+Started by user admin
+Running as SYSTEM
+Building remotely on vallejos in workspace /home/Elias-Pc/jenkins_slave/levantar_servicios
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/eliasito97/labo_5.git
+ > git init /home/vallejos/jenkins_slave/workspace/levantar_servicios # timeout=10
+Fetching upstream changes from https://github.com/eliasito97/labo_5.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/eliasito97/labo_5.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/eliasito97/labo_5.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 19121c01194ec77d2dc0bb9d2febda21a7946e03 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 19121c01194ec77d2dc0bb9d2febda21a7946e03 # timeout=10
+Commit message: "servicios vue, json-server  y django"
+First time build. Skipping changelog.
+[levantar_servicios] $ /bin/sh -xe /tmp/jenkins2054409751751643080.sh
++ docker-compose up -d
+#1 [levantar_servicios-web-vue internal] load build definition from Dockerfile
+#1 transferring dockerfile: 372B done
+#1 DONE 0.0s
+
+#2 [levantar_servicios-mydb internal] load build definition from Dockerfile
+#2 transferring dockerfile: 372B done
+#2 DONE 0.0s
+
+#3 [levantar_servicios-mydb internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [levantar_servicios-web-vue internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [levantar_servicios-web-vue internal] load metadata for docker.io/library/node:lts-alpine
+#5 DONE 1.9s
+
+#6 [levantar_servicios-web-vue internal] load build context
+#6 transferring context: 1.09MB 0.0s done
+#6 DONE 0.1s
+
+#7 [levantar_servicios-mydb internal] load build context
+#7 transferring context: 1.09MB 0.0s done
+#7 DONE 0.1s
+
+#8 [levantar_servicios-web-vue 1/8] FROM docker.io/library/node:lts-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b
+#8 resolve docker.io/library/node:lts-alpine@sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b done
+#8 sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b 1.43kB / 1.43kB done
+#8 sha256:67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc22df5134db43 1.16kB / 1.16kB done
+#8 sha256:0fa08f92e64b03a1a455b2153a50eac0b8e134ab352dbe751229b978b0e0564f 6.44kB / 6.44kB done
+#8 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 0B / 2.81MB 0.1s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 0B / 46.36MB 0.1s
+#8 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 0B / 2.35MB 0.1s
+#8 sha256:9eff44230b2fdcca57a73b8f908c8029e72d24dd05cac5339c79d3dedf6b208b 1.43kB / 1.43kB done
+#8 sha256:67373bd5d90ea600cb5f0fa58d7a5a4e6ebf50b6e05c50c1d1cc22df5134db43 1.16kB / 1.16kB done
+#8 sha256:0fa08f92e64b03a1a455b2153a50eac0b8e134ab352dbe751229b978b0e0564f 6.44kB / 6.44kB done
+#8 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 1.05MB / 2.81MB 0.8s
+#8 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 2.10MB / 2.81MB 2.1s
+#8 sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 2.81MB / 2.81MB 3.0s done
+#8 extracting sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce
+#8 sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 0B / 452B 3.0s
+#8 extracting sha256:ca7dd9ec2225f2385955c43b2379305acd51543c28cf1d4e94522b3d94cce3ce 0.1s done
+#8 sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 452B / 452B 3.2s done
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 3.15MB / 46.36MB 3.7s
+#8 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 1.05MB / 2.35MB 5.2s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 6.29MB / 46.36MB 5.7s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 9.44MB / 46.36MB 8.4s
+#8 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 2.10MB / 2.35MB 9.4s
+#8 sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 2.35MB / 2.35MB 9.8s done
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 12.58MB / 46.36MB 12.2s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 15.73MB / 46.36MB 14.2s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 18.87MB / 46.36MB 16.3s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 22.02MB / 46.36MB 18.4s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 25.17MB / 46.36MB 20.5s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 28.31MB / 46.36MB 22.4s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 31.46MB / 46.36MB 23.9s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 34.60MB / 46.36MB 25.8s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 37.75MB / 46.36MB 27.4s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 40.89MB / 46.36MB 29.3s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 44.04MB / 46.36MB 31.0s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 46.36MB / 46.36MB 32.3s
+#8 sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 46.36MB / 46.36MB 32.3s done
+#8 extracting sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806
+#8 extracting sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 1.4s done
+#8 extracting sha256:55371e6747e8e4327c7a293b77a6b46632f2249d0c89c79f830c4f565c538806 1.4s done
+#8 extracting sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1
+#8 extracting sha256:694d6b1b2d1b452b735d925ef7912fe264d4f03c7ef77effed89d76a086dafd1 0.1s done
+#8 extracting sha256:71f41f5ff77d8eca2e4800eb9001495106991811e45a005c4e59d967d6f40334 done
+#8 DONE 34.1s
+
+#9 [levantar_servicios-mydb 2/8] RUN npm install -g http-server
+#9 5.913 
+#9 5.913 added 39 packages, and audited 40 packages in 5s
+#9 5.914 
+#9 5.914 10 packages are looking for funding
+#9 5.914   run `npm fund` for details
+#9 5.915 
+#9 5.915 found 0 vulnerabilities
+#9 5.916 npm notice 
+#9 5.916 npm notice New major version of npm available! 8.19.2 -> 9.1.2
+#9 5.916 npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.1.2>
+#9 5.916 npm notice Run `npm install -g npm@9.1.2` to update!
+#9 5.916 npm notice 
+#9 DONE 6.1s
+
+#10 [levantar_servicios-mydb 3/8] RUN npm install -g json-server
+#10 8.335 
+#10 8.335 added 109 packages, and audited 110 packages in 8s
+#10 8.336 
+#10 8.336 10 packages are looking for funding
+#10 8.336   run `npm fund` for details
+#10 8.337 
+#10 8.337 found 0 vulnerabilities
+#10 DONE 8.4s
+
+#11 [levantar_servicios-web-vue 4/8] WORKDIR /app
+#11 DONE 0.0s
+
+#12 [levantar_servicios-mydb 5/8] COPY package*.json ./
+#12 DONE 0.0s
+
+#13 [levantar_servicios-mydb 6/8] RUN npm install
+#13 8.754 npm WARN deprecated stable@0.1.8: Modern JS already guarantees Array#sort() is a stable sort, so this library is deprecated. See the compatibility table on MDN: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#browser_compatibility
+#13 36.47 
+#13 36.47 added 951 packages, and audited 952 packages in 36s
+#13 36.47 
+#13 36.47 1 package is looking for funding
+#13 36.47   run `npm fund` for details
+#13 36.48 
+#13 36.48 2 vulnerabilities (1 low, 1 critical)
+#13 36.48 
+#13 36.48 To address all issues, run:
+#13 36.48   npm audit fix
+#13 36.48 
+#13 36.48 Run `npm audit` for details.
+#13 DONE 36.9s
+
+#14 [levantar_servicios-mydb 7/8] COPY . .
+#14 DONE 0.1s
+
+#15 [levantar_servicios-mydb 8/8] RUN npm run build
+#15 0.516 
+#15 0.516 > tarea2@0.1.0 build
+#15 0.516 > vue-cli-service build
+#15 0.516 
+#15 1.184 All browser targets in the browserslist configuration have supported ES module.
+#15 1.184 Therefore we don't build two separate bundles for differential loading.
+#15 1.184 
+#15 1.218 
+#15 1.219 -  Building for production...
+#15 11.22  DONE  Compiled successfully in 8668ms5:25:28 AM
+#15 11.22 
+#15 11.24   File                         Size                   Gzipped
+#15 11.24 
+#15 11.24   dist/js/app.c741021c.js      151.35 KiB             53.27 KiB
+#15 11.24   dist/css/app.35a51c9e.css    20.31 KiB              4.06 KiB
+#15 11.24 
+#15 11.24   Images and other types of assets omitted.
+#15 11.24   Build at: 2022-11-29T05:25:28.889Z - Hash: 3697bafcdefa1721 - Time: 8668ms
+#15 11.24 
+#15 11.24  DONE  Build complete. The dist directory is ready to be deployed.
+#15 11.24  INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+#15 11.24        
+#15 DONE 11.3s
+
+#16 [levantar_servicios-web-vue] exporting to image
+#16 exporting layers
+#16 exporting layers 3.7s done
+#16 writing image sha256:5eaa628db946675faa57e26845d284068b3e8280582812b6f31dd5e2ba4d8617 done
+#16 writing image sha256:57c4e5f859215c86708418cbc89e4f38889e7aa676dd7c83bce5ae16685e7ff6 done
+#16 naming to docker.io/library/levantar_servicios-mydb done
+#16 naming to docker.io/library/levantar_servicios-web-vue done
+#16 DONE 3.8s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+Network conexion_net  Creating
+Network conexion_net  Created
+Network levantar_servicios_default  Creating
+Network levantar_servicios_default  Created
+Container levantar_servicios-web-django-1  Creating
+Container levantar_servicios-mydb-1  Creating
+Container levantar_servicios-mydb-1  Created
+Container levantar_servicios-web-vue-1  Creating
+Container levantar_servicios-web-django-1  Created
+Container levantar_servicios-web-vue-1  Created
+Container levantar_servicios-mydb-1  Starting
+Container levantar_servicios-web-django-1  Starting
+Container levantar_servicios-mydb-1  Started
+Container levantar_servicios-web-vue-1  Starting
+Container levantar_servicios-web-django-1  Started
+Container levantar_servicios-web-vue-1  Started
+Finished: SUCCESS
+
